@@ -1,0 +1,501 @@
+{
+    "AllSellersDeleteSeller08": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='sort_sellers']/div[2]/table/tbody/tr/td[9]/div/button/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Delete",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=delete-link",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Seller has been deleted successfully",
+            "value": ""
+        }
+    ],
+    "AllSellersEditSeller06": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='sort_sellers']/div[2]/table/tbody/tr/td[9]/div/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Edit",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=name",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=name",
+            "value": "Cam Tu"
+        },
+        {
+            "command": "click",
+            "target": "id=password",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=password",
+            "value": "12345"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Seller has been updated successfully",
+            "value": ""
+        }
+    ],
+    "AllSellersEditSeller07": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='sort_sellers']/div[2]/table/tbody/tr/td[9]/div/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Edit",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::div[1]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=name",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "storeEval",
+            "target": "document.getElementById('name').validity.valueMissing;",
+            "value": "isMissing"
+        },
+        {
+            "command": "verifyEval",
+            "target": "${isMissing}",
+            "value": "true"
+        }
+    ],
+    "AllSellersFilterByApproval05": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@data-id='approved_status']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=bs-select-1-1",
+            "value": ""
+        },
+        {
+            "command": "pause",
+            "target": "2000",
+            "value": ""
+        },
+        {
+            "command": "storeXpathCount",
+            "target": "xpath=//tbody/tr",
+            "value": "totalRows"
+        },
+        {
+            "command": "storeXpathCount",
+            "target": "xpath=//tbody//tr//td[6]//input[@type='checkbox' and @checked]",
+            "value": "approvedCount"
+        },
+        {
+            "command": "storeEval",
+            "target": "(function() { if (${approvedCount} == ${totalRows}) return true; else throw 'Mismatch: approved=' + ${approvedCount} + ', total=' + ${totalRows}; })();",
+            "value": "result"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@data-id='approved_status']",
+            "value": ""
+        },
+        {
+            "command": "pause",
+            "target": "1000",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-2']/span",
+            "value": ""
+        },
+        {
+            "command": "pause",
+            "target": "2000",
+            "value": ""
+        },
+        {
+            "command": "storeXpathCount",
+            "target": "xpath=//tbody//tr//td[6]//input[@type='checkbox' and @checked]",
+            "value": "approvedCount"
+        },
+        {
+            "command": "storeEval",
+            "target": "(function() { if (${approvedCount} == 0) return true; else throw 'Non-approved expected 0 but found ' + ${approvedCount}; })();",
+            "value": "result2"
+        }
+    ],
+    "AllSellersSearchByEmail03": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=search",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=search",
+            "value": "f11@gmail.com"
+        },
+        {
+            "command": "submit",
+            "target": "id=sort_sellers",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//tbody/tr",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent  ",
+            "target": "xpath=//td[normalize-space()='f11@gmail.com']",
+            "value": ""
+        }
+    ],
+    "AllSellersSearchNoResult04": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=search",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=search",
+            "value": "ABCXYZ123"
+        },
+        {
+            "command": "submit",
+            "target": "id=sort_sellers",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Nothing found",
+            "value": ""
+        }
+    ],
+    "AllSellersViewList01": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//ul[@id='main-menu']/li[6]/a/span",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//ul[@id='main-menu']/li[6]/ul/li/a/span",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//th[contains(text(),'Name')]",
+            "value": ""
+        }
+    ],
+    "AllSellersViewSellerDetail02": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='sort_sellers']/div[2]/table/tbody/tr/td[2]",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Phone",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Email Address",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Verification Info",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Approval",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Num. of Products",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Due to seller",
+            "value": ""
+        }
+    ],
+    "SellerVerificationEditExistingField10": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/verification/form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "name=label[]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=label[]",
+            "value": "How satisfied are you with our service?"
+        },
+        {
+            "command": "click",
+            "target": "name=options_0[]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=options_0[]",
+            "value": "Very satisfied"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[2]/div/input",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[2]/div/input",
+            "value": "Satisfied"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Verification form updated successfully",
+            "value": ""
+        }
+    ],
+    "SellerVerificationSaveForm11": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/verification/form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='button']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[3]/div/input",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[3]/div/input",
+            "value": "Neutral"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='button']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[4]/div/input",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[4]/div/input",
+            "value": "Dissatisfied"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "Verification form updated successfully",
+            "value": ""
+        }
+    ],
+    "SellerVerificationValidateMissing12": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/verification/form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[4]/div/input",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "xpath=//div[@id='form']/div/div[2]/div/div[4]/div/input",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "storeValue",
+            "target": "xpath=//input[@name='options_0[]']",
+            "value": "defaultValue"
+        },
+        {
+            "command": "echo  ",
+            "target": "${defaultValue}",
+            "value": ""
+        }
+    ],
+    "SellerVerificationViewForm09": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/sellers",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//ul[@id='main-menu']/li[6]/ul/li[6]/a/span",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/verification/form",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=//h5[contains(text(),'Seller Verification Form')]",
+            "value": "Seller Verification Form"
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//label[contains(text(),'Select')]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//input[@name='label[]' and @value='Check is person?']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//input[@name='options_0[]' and @value='Yes']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//input[@name='options_0[]' and @value='No']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//li[contains(text(),'Text Input')]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//li[contains(text(),'Select')]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//li[contains(text(),'Multiple Select')]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//li[contains(text(),'Radio')]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//li[contains(text(),'File')]",
+            "value": ""
+        }
+    ]
+}
