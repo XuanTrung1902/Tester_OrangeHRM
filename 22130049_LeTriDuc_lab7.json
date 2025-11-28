@@ -1,0 +1,294 @@
+{
+  "TC01_AddCart01": [
+    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='section_newest']/section/div/div/div[2]/div/div/div/div/div/div/div/div/a[3]/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='section_newest']/section/div/div/div[2]/div/div/div/div/div/div/div/div/a[3]/i",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='addToCart-modal-body']/div/div/div[2]/div/div[3]/button/span",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='addToCart-modal-body']/div/div/div[2]/div/div[3]/button/span",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='modal-size']/div/button/span",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='modal-size']/div/button/span",
+      "value": ""
+    }
+  ],
+
+  "TC02_AddCart02": [
+    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Acer Hiu']",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//img[@alt='Acer Hiu']",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$22,000,000.00'])[2]/following::span[1]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$22,000,000.00'])[2]/following::span[1]",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='modal-size']/div/button",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='modal-size']/div/button",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Active eCommerce CMS']",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//img[@alt='Active eCommerce CMS']",
+      "value": ""
+    }
+  ],
+
+  "TC03_ChangeQuantity": [
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/cart",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]/i",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li[2]/div/div[4]/div/button[2]/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li[2]/div/div[4]/div/button[2]/i",
+      "value": ""
+    }
+  ],
+
+  "TC04_ViewCart": [
+    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='cart_items']/a",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='cart_items']/a",
+      "value": ""
+    },
+    {
+      "command": "verifyText",
+      "target": "link=View cart",
+      "value": "View cart"
+    },
+    { "command": "click", "target": "link=View cart", "value": "" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//section[@id='cart-summary']",
+      "value": ""
+    }
+  ],
+
+  "TC05_DeleteItem": [
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/cart",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "value": ""
+    }
+  ],
+
+  "TC06_ChooseAddress": [
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/cart",
+      "value": ""
+    },
+    {
+      "command": "verifyText",
+      "target": "link=Continue to Shipping",
+      "value": "Continue to Shipping"
+    },
+    { "command": "click", "target": "link=Continue to Shipping", "value": "" },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//label/span/span",
+      "value": ""
+    },
+    { "command": "click", "target": "xpath=//label/span/span", "value": "" }
+  ],
+
+  "TC07_ChooseDelivery": [
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//label/span/span",
+      "value": ""
+    },
+    { "command": "click", "target": "xpath=//label/span/span", "value": "" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add New Address'])[1]/following::button[1]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add New Address'])[1]/following::button[1]",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose Delivery Type'])[1]/following::span[3]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose Delivery Type'])[1]/following::span[3]",
+      "value": ""
+    }
+  ],
+
+  "TC08_ChoosePaymentMethod": [
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout/delivery_info",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Home Delivery'])[1]/following::button[1]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Home Delivery'])[1]/following::button[1]",
+      "value": ""
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout/payment_select",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "name=additional_info",
+      "value": ""
+    },
+    { "command": "click", "target": "name=additional_info", "value": "" },
+    { "command": "type", "target": "name=additional_info", "value": "test" },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//img[contains(@src,'cms.anhtester.com/public/assets/img/cards/cod.png')]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//img[contains(@src,'cms.anhtester.com/public/assets/img/cards/cod.png')]",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//form[@id='checkout-form']/div[2]/label/span",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//form[@id='checkout-form']/div[2]/label/span",
+      "value": ""
+    },
+    {
+      "command": "assertElementPresent",
+      "target": "xpath=//form[@id='checkout-form']/div[3]/div[2]/button",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//form[@id='checkout-form']/div[3]/div[2]/button",
+      "value": ""
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout/order-confirmed",
+      "value": ""
+    }
+  ]
+}
