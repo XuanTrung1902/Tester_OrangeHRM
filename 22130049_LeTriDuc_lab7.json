@@ -1,9 +1,11 @@
-{
-  "TC01_AddCart01": [
-    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+[
+  [
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//div[@id='section_newest']/section/div/div/div[2]/div/div/div/div/div/div/div/div/a[3]/i",
+      "test_case": "AddCart01"
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/",
       "value": ""
     },
     {
@@ -12,17 +14,17 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//div[@id='addToCart-modal-body']/div/div/div[2]/div/div[3]/button/span",
+      "command": "waitForElementVisible",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Price:'])[1]/following::span[1]",
       "value": ""
     },
     {
       "command": "click",
-      "target": "xpath=//div[@id='addToCart-modal-body']/div/div/div[2]/div/div[3]/button/span",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Total Price:'])[1]/following::span[1]",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//div[@id='modal-size']/div/button/span",
       "value": ""
     },
@@ -32,12 +34,28 @@
       "value": ""
     }
   ],
-
-  "TC02_AddCart02": [
-    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+  [
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//img[@alt='Acer Hiu']",
+      "test_case": "AddCart02"
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/",
+      "value": ""
+    },
+    {
+      "command": "runScript",
+      "target": "window.scrollBy(0,200)",
+      "value": ""
+    },
+    {
+      "command": "pause",
+      "target": "1000",
+      "value": ""
+    },
+    {
+      "command": "runScript",
+      "target": "window.scrollBy(0,200)",
       "value": ""
     },
     {
@@ -46,7 +64,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementVisible",
       "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='$22,000,000.00'])[2]/following::span[1]",
       "value": ""
     },
@@ -56,7 +74,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//div[@id='modal-size']/div/button",
       "value": ""
     },
@@ -66,25 +84,22 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//img[@alt='Active eCommerce CMS']",
-      "value": ""
-    },
-    {
       "command": "click",
       "target": "xpath=//img[@alt='Active eCommerce CMS']",
       "value": ""
     }
   ],
-
-  "TC03_ChangeQuantity": [
+  [
+    {
+      "test_case": "ChangeQuantity"
+    },
     {
       "command": "open",
       "target": "https://cms.anhtester.com/cart",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementVisible",
       "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button/i",
       "value": ""
     },
@@ -94,7 +109,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]",
       "value": ""
     },
@@ -104,7 +119,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementVisible",
       "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button[2]/i",
       "value": ""
     },
@@ -114,7 +129,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li[2]/div/div[4]/div/button[2]/i",
       "value": ""
     },
@@ -124,89 +139,127 @@
       "value": ""
     }
   ],
-
-  "TC04_ViewCart": [
-    { "command": "open", "target": "https://cms.anhtester.com/", "value": "" },
+  [
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//div[@id='cart_items']/a",
-      "value": ""
+      "test_case": "ViewCart"
     },
-    {
-      "command": "click",
-      "target": "xpath=//div[@id='cart_items']/a",
-      "value": ""
-    },
-    {
-      "command": "verifyText",
-      "target": "link=View cart",
-      "value": "View cart"
-    },
-    { "command": "click", "target": "link=View cart", "value": "" },
-    {
-      "command": "assertElementPresent",
-      "target": "xpath=//section[@id='cart-summary']",
-      "value": ""
-    }
-  ],
-
-  "TC05_DeleteItem": [
     {
       "command": "open",
       "target": "https://cms.anhtester.com/cart",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "command": "waitForElementVisible",
+      "target": "name=quantity[2982]",
       "value": ""
     },
     {
       "command": "click",
-      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "target": "name=quantity[2982]",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "name=quantity[2982]",
+      "value": "2"
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li/div/div[4]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li[2]/div/div[4]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//section[@id='cart-summary']/div/div/div/div/div/ul/li[2]/div/div[4]/div/button/i",
       "value": ""
     }
   ],
-
-  "TC06_ChooseAddress": [
+  [
+    {
+      "test_case": "DeleteItem"
+    },
     {
       "command": "open",
       "target": "https://cms.anhtester.com/cart",
       "value": ""
     },
     {
-      "command": "verifyText",
+      "command": "click",
       "target": "link=Continue to Shipping",
-      "value": "Continue to Shipping"
+      "value": ""
     },
-    { "command": "click", "target": "link=Continue to Shipping", "value": "" },
     {
       "command": "open",
       "target": "https://cms.anhtester.com/checkout",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//label/span/span",
       "value": ""
     },
-    { "command": "click", "target": "xpath=//label/span/span", "value": "" }
+    {
+      "command": "click",
+      "target": "xpath=//label/span/span",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "link=Continue to Shipping",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "link=Continue to Shipping",
+      "value": ""
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::span[4]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::span[4]",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::span[3]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::span[3]",
+      "value": ""
+    }
   ],
-
-  "TC07_ChooseDelivery": [
+  [
+    {
+      "test_case": "ChooseAddress"
+    },
     {
       "command": "open",
       "target": "https://cms.anhtester.com/checkout",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//label/span/span",
-      "value": ""
-    },
-    { "command": "click", "target": "xpath=//label/span/span", "value": "" },
-    {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add New Address'])[1]/following::button[1]",
       "value": ""
     },
@@ -216,7 +269,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose Delivery Type'])[1]/following::span[3]",
       "value": ""
     },
@@ -226,15 +279,17 @@
       "value": ""
     }
   ],
-
-  "TC08_ChoosePaymentMethod": [
+  [
+    {
+      "test_case": "ChooseDelivery"
+    },
     {
       "command": "open",
       "target": "https://cms.anhtester.com/checkout/delivery_info",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Home Delivery'])[1]/following::button[1]",
       "value": ""
     },
@@ -249,24 +304,32 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementVisible",
       "target": "name=additional_info",
       "value": ""
     },
-    { "command": "click", "target": "name=additional_info", "value": "" },
-    { "command": "type", "target": "name=additional_info", "value": "test" },
     {
-      "command": "assertElementPresent",
-      "target": "xpath=//img[contains(@src,'cms.anhtester.com/public/assets/img/cards/cod.png')]",
+      "command": "click",
+      "target": "name=additional_info",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "name=additional_info",
+      "value": "test"
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//img[contains(@src,'https://cms.anhtester.com/public/assets/img/cards/cod.png')]",
       "value": ""
     },
     {
       "command": "click",
-      "target": "xpath=//img[contains(@src,'cms.anhtester.com/public/assets/img/cards/cod.png')]",
+      "target": "xpath=//img[contains(@src,'https://cms.anhtester.com/public/assets/img/cards/cod.png')]",
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//form[@id='checkout-form']/div[2]/label/span",
       "value": ""
     },
@@ -276,7 +339,7 @@
       "value": ""
     },
     {
-      "command": "assertElementPresent",
+      "command": "waitForElementClickable",
       "target": "xpath=//form[@id='checkout-form']/div[3]/div[2]/button",
       "value": ""
     },
@@ -290,5 +353,255 @@
       "target": "https://cms.anhtester.com/checkout/order-confirmed",
       "value": ""
     }
+  ],
+  [
+    {
+      "test_case": "ChoosePaymentMethod"
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout/order-confirmed",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "link=My Panel",
+      "value": ""
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/dashboard",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Support Ticket'])[1]/following::span[1]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Support Ticket'])[1]/following::span[1]",
+      "value": ""
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/profile",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "name=phone",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "name=phone",
+      "value": "ltduc@gmail.com"
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "name=new_password",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "name=new_password",
+      "value": "123456789"
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[3]/div/div[7]/button/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Make This Default'])[3]/following::a[1]",
+      "value": ""
+    }
+  ],
+  [
+    {
+      "test_case": "GoToDashboard"
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/cart",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//a[@onclick='removeFromCartView(event, 2910)']",
+      "value": ""
+    }
+  ],
+  [
+    {
+      "test_case": "RemoveProductFromCart"
+    },
+    {
+      "command": "open",
+      "target": "https://cms.anhtester.com/checkout",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[3]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[3]/div/button/i",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//a[@onclick=\"edit_address('1449')\"]",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//a[@onclick=\"edit_address('1449')\"]",
+      "value": ""
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div/div[2]/textarea",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div/div[2]/textarea",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div/div[2]/textarea",
+      "value": "\u0110\u01b0\u1eddng Linh Trung"
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[2]/div[2]/div/div/button",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[2]/div[2]/div/div/button",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "id=bs-select-16-1",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "id=bs-select-16-1",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[3]/div[2]/div/button",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[3]/div[2]/div/button",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//a[@id='bs-select-17-4']/span",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//a[@id='bs-select-17-4']/span",
+      "value": ""
+    },
+    {
+      "command": "select",
+      "target": "id=edit_state",
+      "value": "label=Thai Nguyen"
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/button/div/div/div",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/button/div/div/div",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/button/div/div/div",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/button/div/div/div",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "id=bs-select-17-3",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "id=bs-select-17-3",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/select",
+      "value": ""
+    },
+    {
+      "command": "select",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[4]/div[2]/div/select",
+      "value": "label=T\u00e2n An"
+    },
+    {
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[5]/div[2]/input",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[5]/div[2]/input",
+      "value": ""
+    },
+    {
+      "command": "type",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[5]/div[2]/input",
+      "value": "77777"
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[6]/div[2]/input",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[6]/div[2]/input",
+      "value": ""
+    },
+    {
+      "command": "waitForElementClickable",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[7]/button",
+      "value": ""
+    },
+    {
+      "command": "click",
+      "target": "xpath=//div[@id='edit_modal_body']/form/div/div[7]/button",
+      "value": ""
+    }
   ]
-}
+]
