@@ -1,0 +1,1808 @@
+{
+  "configuration": {
+    "device": {
+      "orientation": "landscape",
+      "deviceName": "Desktop"
+    }
+  },
+  "type": "clickpath",
+  "version": "1.0",
+  "events": [
+    {
+      "description": "Loading of \"https://cms.anhtester.com/\"",
+      "wait": {
+        "waitFor": "page_complete"
+      },
+      "target": {},
+      "type": "navigate",
+      "url": "https://cms.anhtester.com/"
+    },
+    {
+      "description": "click",
+      "wait": {
+        "waitFor": "page_complete"
+      },
+      "target": {
+        "locators": [
+          {
+            "type": "dom",
+            "value": "document.evaluate('//button[@data-key=\\'website-popup\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+          }
+        ]
+      },
+      "type": "click",
+      "button": 0
+    },
+    {
+      "description": "click",
+      "wait": {
+        "waitFor": "page_complete"
+      },
+      "target": {
+        "locators": [
+          {
+            "type": "css",
+            "value": "#search"
+          }
+        ]
+      },
+      "type": "click",
+      "button": 0
+    },
+    {
+      "description": "type Cosy Hai Yen AODXUMXT",
+      "wait": {
+        "waitFor": "page_complete"
+      },
+      "target": {
+        "locators": [
+          {
+            "type": "css",
+            "value": "#search"
+          }
+        ]
+      },
+      "type": "keystrokes",
+      "textValue": "Cosy Hai Yen AODXUMXT",
+      "simulateBlurEvent": true,
+      "masked": false,
+      "simulateReturnKey": true
+    },
+    {
+      "description": "click",
+      "wait": {
+        "waitFor": "page_complete"
+      },
+      "target": {
+        "locators": [
+          {
+            "type": "css",
+            "value": "#search"
+          }
+        ]
+      },
+      "type": "click",
+      "button": 0
+    },
+    {
+      "description": "pause",
+      "target": {},
+      "type": "javascript",
+      "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+    }
+  ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type bánh",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "bánh",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type bánh",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "bánh",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type super sushi",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "super sushi",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type a@312_()(*",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "a@312_()(*",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type qwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjkl",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#search"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "qwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjklqwertyuiopasdfghjkl",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "pause",
+            "target": {},
+            "type": "javascript",
+            "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, );"
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/login\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/login"
+        },
+        {
+            "description": "type admin@example.com",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#email"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "admin@example.com",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#password"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 123456",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#password"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "123456",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[6]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[6]/ul/li[5]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'All Seller Packages\\'])[1]/following::span[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Pack A",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Pack A",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 20",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "20",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 20",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "20",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 60",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "60",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'Package Logo\\'])[1]/following::div[4]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'aiz-select-file\\']/div[2]/div/div/div/div[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//div[@id=\\'aizUploaderModal\\']/div/div/div[3]/button', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'All Seller Packages\\'])[1]/following::span[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'All Seller Packages\\'])[1]/following::span[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Pack chữ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Pack chữ",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abc",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abc",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abc",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abc",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abc",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abc",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Edit\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Pack zero",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Pack zero",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 200",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "200",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 201",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "201",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 600",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "600",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Edit\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Pack zero",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Pack zero",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type ",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Edit\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type Pack zero",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#name"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "Pack zero",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type 200",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#amount"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "200",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abc",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#product_upload_limit"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abc",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "type abc",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#duration"
+                    }
+                ]
+            },
+            "type": "keystrokes",
+            "textValue": "abc",
+            "simulateBlurEvent": true,
+            "masked": false
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "dom",
+                        "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [
+        {
+            "description": "Loading of \"https://cms.anhtester.com/admin/seller_packages\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://cms.anhtester.com/admin/seller_packages"
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "a:contains(\"Delete\")"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [
+                    {
+                        "type": "css",
+                        "value": "#delete-link"
+                    }
+                ]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}
