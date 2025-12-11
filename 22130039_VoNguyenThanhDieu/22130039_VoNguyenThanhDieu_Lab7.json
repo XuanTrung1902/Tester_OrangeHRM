@@ -1,0 +1,1653 @@
+{
+  "BLOG_VIEW_1": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/login\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/login"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#email"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type admin@example.com",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#email"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "admin@example.com",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#password"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type 123456",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#password"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "123456",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        }
+      ]
+    }
+  ],
+  "BLOG_VIEW_2": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'All Posts\\'])[2]/following::span[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 3000);"
+        }
+      ]
+    }
+  ],
+  "BLOG_VIEW_3": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]/tbody/tr', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        }
+      ]
+    }
+  ],
+  "BLOG_SEARCH_1": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type test",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "test",
+          "simulateBlurEvent": true,
+          "masked": false,
+          "simulateReturnKey": true
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tbody//tr[1]/td[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"*test*\";\n                        if(matches && false) {\n                            api.fail(\"Text *test* was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text *test* was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOG_SEARCH_2": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type abcxyz",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "abcxyz",
+          "simulateBlurEvent": true,
+          "masked": false,
+          "simulateReturnKey": true
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOG_SEARCH_3": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type abcxyz45421201534.202451024534548241530",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "abcxyz45421201534.202451024534548241530",
+          "simulateBlurEvent": true,
+          "masked": false,
+          "simulateReturnKey": true
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOG_SEARCH_4": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type _)**%&#^T&*%#%$%",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "_)**%&#^T&*%#%$%",
+          "simulateBlurEvent": true,
+          "masked": false,
+          "simulateReturnKey": true
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_VIEW_1": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/login\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/login"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#email"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type admin@example.com",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#email"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "admin@example.com",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#password"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type 123456",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#password"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "123456",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//button[@type=\\'submit\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_VIEW_2": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('(.//*[normalize-space(text()) and normalize-space(.)=\\'All Blog Categories\\'])[1]/following::span[1]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 3000);"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_VIEW_3": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]/tbody/tr', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_SEARCH_1": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type test",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "test",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "send keys",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#search')[0] : document.querySelector('#search');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 10000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class,\\'aiz-table\\')]//tbody//tr[1]/td[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class,\\'aiz-table\\')]//tbody//tr[1]/td[2]', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"*Test*\";\n                        if(matches && false) {\n                            api.fail(\"Text *Test* was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text *Test* was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_SEARCH_2": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type abcxyz",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "abcxyz",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "send keys",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#search')[0] : document.querySelector('#search');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_SEARCH_3": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type 0000000000000000000000000000000000000000",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "0000000000000000000000000000000000000000",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "send keys",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#search')[0] : document.querySelector('#search');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ],
+  "BLOGCATE_SEARCH_4": [
+    {
+      "configuration": {
+        "device": {
+          "orientation": "landscape",
+          "deviceName": "Desktop"
+        }
+      },
+      "type": "clickpath",
+      "version": "1.0",
+      "events": [
+        {
+          "description": "Loading of \"https://cms.anhtester.com/admin\"",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "navigate",
+          "url": "https://cms.anhtester.com/admin"
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "dom",
+                "value": "document.evaluate('//ul[@id=\\'main-menu\\']/li[9]/ul/li[2]/a/span', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "click",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "click",
+          "button": 0
+        },
+        {
+          "description": "type +_()(*&(*^^$@%$",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {
+            "locators": [
+              {
+                "type": "css",
+                "value": "#search"
+              }
+            ]
+          },
+          "type": "keystrokes",
+          "textValue": "+_()(*&(*^^$@%$",
+          "simulateBlurEvent": true,
+          "masked": false
+        },
+        {
+          "description": "send keys",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "\n                const keys = [13];\n                const elem = typeof $ !== 'undefined' ? $('#search')[0] : document.querySelector('#search');\n                keys.forEach((key) => {\n                    let eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keydown\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    \n                    elem.dispatchEvent(eventObj);\n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keypress\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                    \n                    eventObj = document.createEvent(\"Events\");\n                    eventObj.initEvent(\"keyup\", true, true);\n                    eventObj.key = key;\n                    eventObj.keyCode = key;\n                    eventObj.which = key;\n                    eventObj.charCode = key;\n                    elem.dispatchEvent(eventObj);\n                });"
+        },
+        {
+          "description": "pause",
+          "target": {},
+          "type": "javascript",
+          "javaScript": "api.startAsyncSyntheticEvent(); \n                setTimeout(() => {api.finish()}, 30000);"
+        },
+        {
+          "description": "waitForElementPresent",
+          "wait": {
+            "waitFor": "validation",
+            "timeoutInMilliseconds": 60000,
+            "validation": {
+              "target": {
+                "locators": [
+                  {
+                    "type": "dom",
+                    "value": "document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                  }
+                ]
+              },
+              "type": "element_match",
+              "failIfFound": false,
+              "match": ""
+            }
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": ""
+        },
+        {
+          "description": "verifyText",
+          "wait": {
+            "waitFor": "page_complete"
+          },
+          "target": {},
+          "type": "javascript",
+          "javaScript": "const elem = document.evaluate('//table[contains(@class, \\'aiz-table\\')]//tr[@class=\\'footable-empty\\']/td', document, null, XPathResult.ANY_TYPE, null).iterateNext();\n                        const textToMatch = elem.innerText;\n                        const matches = textToMatch === \"Nothing found\";\n                        if(matches && false) {\n                            api.fail(\"Text Nothing found was present.\");\n                        } else if(!matches && !false) {\n                            api.fail(\"Text Nothing found was not present.\");\n                        }"
+        }
+      ]
+    }
+  ]
+}
