@@ -1,23 +1,8 @@
 {
-    "BLOG_ADD_1": [
+    "BLOGADD1": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Posts'])[2]/following::span[1]",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
@@ -28,7 +13,7 @@
         {
             "command": "type",
             "target": "id=title",
-            "value": "Bông hoa"
+            "value": "Test Happy Path"
         },
         {
             "command": "click",
@@ -53,7 +38,7 @@
         {
             "command": "type",
             "target": "id=slug",
-            "value": "bông-hoaa"
+            "value": "test-happy-path"
         },
         {
             "command": "click",
@@ -63,7 +48,7 @@
         {
             "command": "type",
             "target": "name=short_description",
-            "value": "ví dụ"
+            "value": "Test Happy Path"
         },
         {
             "command": "click",
@@ -86,14 +71,9 @@
             "value": "30000"
         },
         {
-            "command": "verifyElementPresent",
-            "target": "xpath=//h5[normalize-space(text())='All blog posts']",
-            "value": ""
-        },
-        {
             "command": "verifyText",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]/td[2]",
-            "value": "Bông hoa"
+            "value": "Test Happy Path"
         },
         {
             "command": "click",
@@ -103,7 +83,7 @@
         {
             "command": "verifyText",
             "target": "xpath=//th[normalize-space(text())='Short Description']/following-sibling::td",
-            "value": "*ví dụ*"
+            "value": "Test Happy Path"
         },
         {
             "command": "verifyText",
@@ -111,25 +91,731 @@
             "value": "*Test AUTO*"
         }
     ],
-    "BLOG_ADD_2": [
+    "BLOGADD10": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Trùng lặp slug A"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[3]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "trung-slug"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "trùng slug"
+        },
+        {
+            "command": "click",
+            "target": "name=meta_title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
             "command": "click",
             "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Posts'])[2]/following::span[1]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Trùng lặp slug b"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[3]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "trung-slug"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "trùng slug"
+        },
+        {
+            "command": "click",
+            "target": "name=meta_title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class,'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGADD11": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Slug chứa ký tự đặc biệt"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[3]",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "^#$@*\""
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Slug chứa ký tự đặc biệt"
+        },
+        {
+            "command": "click",
+            "target": "name=meta_title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class,'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGADD12": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Select File",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//div[@id='aizUploaderModal']",
+            "value": "3000"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@title='DSC07073.jpg']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aizUploaderModal']/div/div/div[3]/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
+            "value": ""
+        },
+        {
+            "command": "verifyAttribute",
+            "target": "xpath=//div[contains(@class, 'file-preview-item')]@title",
+            "value": "DSC07073.jpg"
+        }
+    ],
+    "BLOGADD13": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Upload New",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aiz-upload-files']/div/div[2]/div/div[2]/div/div/button",
+            "value": ""
+        },
+        {
+            "command": "pause",
+            "target": "30000",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Select File",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class,'uppy-StatusBar-statusPrimary') and normalize-space()='Complete']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aizUploaderModal']/div/div/div[3]/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        }
+    ],
+    "BLOGADD14": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Upload New",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aiz-upload-files']/div/div[2]/div/div[2]/div/div/button",
+            "value": ""
+        },
+        {
+            "command": "pause",
+            "target": "30000",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Select File",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class,'uppy-StatusBar-statusPrimary') and normalize-space()='Complete']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aizUploaderModal']/div/div/div[3]/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        }
+    ],
+    "BLOGADD15": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "css=div.note-editable",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').innerHTML = 'This is a test description';",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').dispatchEvent(new Event('input', { bubbles: true }));",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "css=div.note-editable",
+            "value": "This is a test description"
+        }
+    ],
+    "BLOGADD16": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "css=div.note-editable",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').innerHTML = '         ';",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').dispatchEvent(new Event('input', { bubbles: true }));",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "css=div.note-editable",
+            "value": ""
+        }
+    ],
+    "BLOGADD17": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Test Happy Path"
+        },
+        {
+            "command": "click",
+            "target": "css=div.note-editable",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').innerHTML = '<script>alert(1)</script>';",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').dispatchEvent(new Event('input', { bubbles: true }));",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "css=div.note-editable",
+            "value": "alert(1)"
+        }
+    ],
+    "BLOGADD2": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
@@ -165,7 +851,7 @@
         {
             "command": "type",
             "target": "id=slug",
-            "value": "bông-hoaa"
+            "value": "trong-title"
         },
         {
             "command": "click",
@@ -175,7 +861,7 @@
         {
             "command": "type",
             "target": "name=short_description",
-            "value": "ví dụ"
+            "value": "Bỏ trống title"
         },
         {
             "command": "click",
@@ -198,103 +884,11 @@
             "value": ""
         }
     ],
-    "BLOG_ADD_3": [
+    "BLOGADD3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Posts'])[2]/following::span[1]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "id=title",
-            "value": ""
-        },
-        {
-            "command": "type",
-            "target": "id=title",
-            "value": "mặt trời"
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "id=slug",
-            "value": ""
-        },
-        {
-            "command": "type",
-            "target": "id=slug",
-            "value": "bông-hoaa"
-        },
-        {
-            "command": "click",
-            "target": "name=short_description",
-            "value": ""
-        },
-        {
-            "command": "type",
-            "target": "name=short_description",
-            "value": "ví dụ"
-        },
-        {
-            "command": "click",
-            "target": "id=add_form",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//button[@type='submit']",
-            "value": ""
-        },
-        {
-            "command": "verifyElementNotPresent",
-            "target": "xpath=//div[contains(@class, 'alert-success')]",
-            "value": ""
-        },
-        {
-            "command": "verifyLocation",
             "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
-        }
-    ],
-    "BLOG_ADD_4": [
-        {
-            "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Posts'])[2]/following::span[1]",
-            "value": ""
         },
         {
             "command": "click",
@@ -304,7 +898,7 @@
         {
             "command": "type",
             "target": "id=title",
-            "value": "Short Description"
+            "value": "Loremipsumdolorsitamet,consecteturadipiscingelit.SeddoyouspeakVietnamese?Nuncviverraetmetusasegestas.Phasellusatfelisneque.Nullafacilisi.Donecnonliberoatpurusconsequatconsectetur.VestibulumanteipsumprimisinfaucibusorciluctusetultricesposuerecubiliaCurae;Quisquecursus,nislidtempusconvallis,nisiereat.1234567890"
         },
         {
             "command": "click",
@@ -329,7 +923,228 @@
         {
             "command": "type",
             "target": "id=slug",
-            "value": "bông-hoaa"
+            "value": "trong-title"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "title dài hơn 255 "
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        }
+    ],
+    "BLOGADD4": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "<script>alert(1)</script>"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "trong-title"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "XSS"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "assertAlertNotPresent",
+            "target": "",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//h5[normalize-space(text())='All blog posts']",
+            "value": "30000"
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]/td[2]",
+            "value": "alert(1)'"
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]",
+            "value": "30000"
+        }
+    ],
+    "BLOGADD5": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test không chọn Category"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "khong-chon-category"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Bỏ trống category"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        }
+    ],
+    "BLOGADD6": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test bỏ trống Short Description"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "bo-trong-short-description"
         },
         {
             "command": "click",
@@ -362,30 +1177,169 @@
             "value": ""
         }
     ],
-    "BLOG_ADD_5": [
+    "BLOGADD7": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test XSS Short Description"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "test-xss-short-description"
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "<script>alert(1)</script>"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Posts'])[2]/following::span[1]",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "assertAlertNotPresent",
+            "target": "",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//h5[normalize-space(text())='All blog posts']",
+            "value": "30000"
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Options'])[1]/following::td[2]",
+            "value": ""
+        },
+        {
+            "command": "verifyText",
+            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]/td[2]",
+            "value": "alert(1)'"
+        }
+    ],
+    "BLOGADD8": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::div[3]",
+            "target": "id=title",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=title",
+            "value": "Test bỏ trống Slug"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='category']/div/div/button/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//a[@id='bs-select-1-1']/span",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=Test AUTO"
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "Bỏ trống Slug"
+        },
+        {
+            "command": "click",
+            "target": "id=add_form",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog/create",
+            "value": ""
+        }
+    ],
+    "BLOGADD9": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         },
         {
@@ -412,11 +1366,6 @@
             "command": "select",
             "target": "id=category_id",
             "value": "label=Test AUTO"
-        },
-        {
-            "command": "storeValue",
-            "target": "id=slug",
-            "value": "generatedSlug"
         },
         {
             "command": "click",
@@ -464,35 +1413,15 @@
             "value": ""
         },
         {
-            "command": "storeValue",
+            "command": "verifyValue",
             "target": "id=slug",
-            "value": "savedSlug"
-        },
-        {
-            "command": "verifyExpression",
-            "target": "storedVars['savedSlug'].includes('kiem-tra-tu-dong-tao-slug')",
-            "value": "true"
-        },
-        {
-            "command": "verifyExpression",
-            "target": "storedVars['generatedSlug'] == storedVars['savedSlug']",
-            "value": "false"
+            "value": "kim-tra-t-ng-to-slug"
         }
     ],
-    "BLOGCATE_ADD_01": [
+    "BLOGCATEADD1": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li[2]/a/span",
+            "target": "https://cms.anhtester.com/admin/blog-category",
             "value": ""
         },
         {
@@ -531,7 +1460,352 @@
             "value": "30000"
         }
     ],
-    "BLOGCATE_SEARCH_01": [
+    "BLOGCATEADD2": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Blog Categories'])[1]/following::span[1]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "submit",
+            "target": "css=.form-horizontal",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category/create",
+            "value": ""
+        }
+    ],
+    "BLOGCATEADD3": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Blog Categories'])[1]/following::span[1]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": "Loremipsumdolorsitamet,consecteturadipiscingelit.SeddoyouspeakVietnamese?Nuncviverraetmetusasegestas.Phasellusatfelisneque.Nullafacilisi.Donecnonliberoatpurusconsequatconsectetur.VestibulumanteipsumprimisinfaucibusorciluctusetultricesposuerecubiliaCurae;Quisquecursus,nislidtempusconvallis,nisiereat.1234567890"
+        },
+        {
+            "command": "submit",
+            "target": "css=.form-horizontal",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category/create",
+            "value": ""
+        }
+    ],
+    "BLOGCATEADD4": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Blog Categories'])[1]/following::span[1]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": "                                           "
+        },
+        {
+            "command": "submit",
+            "target": "css=.form-horizontal",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category/create",
+            "value": ""
+        }
+    ],
+    "BLOGCATEADD5": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Blog Categories'])[1]/following::span[1]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": "<script>alert(1)</script>"
+        },
+        {
+            "command": "submit",
+            "target": "css=.form-horizontal",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//h5[normalize-space(text())='Blog Categories']",
+            "value": "30000"
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "alert(1)",
+            "value": ""
+        }
+    ],
+    "BLOGCATEDELETE1": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[3]/a[2]/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=delete-link",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        }
+    ],
+    "BLOGCATEDELETE2": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[3]/a[2]/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=delete-link",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class,'alert-danger')]",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "áo",
+            "value": ""
+        }
+    ],
+    "BLOGCATEDELETE3": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//tr[2]/td[3]/a[2]/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='delete-modal']/div/div/div[2]/button",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "testt",
+            "value": ""
+        }
+    ],
+    "BLOGCATEEDIT1": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[3]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": "update"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyLocation",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//h5[normalize-space(text())='Blog Categories']",
+            "value": "30000"
+        },
+        {
+            "command": "verifyTextPresent",
+            "target": "văn phòng phẩm",
+            "value": ""
+        }
+    ],
+    "BLOGCATEEDIT2": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[3]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGCATEEDIT3": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog-category",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[3]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=category_name",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGCATESEARCH1": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -555,7 +1829,7 @@
         {
             "command": "type",
             "target": "id=search",
-            "value": "test"
+            "value": "Test"
         },
         {
             "command": "sendKeys",
@@ -564,18 +1838,13 @@
         },
         {
             "command": "waitForTextPresent",
-            "target": "test",
+            "target": "Test",
             "value": "30000"
-        },
-        {
-            "command": "pause",
-            "target": "10000",
-            "value": ""
         },
         {
             "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class,'aiz-table')]//tbody//tr[1]/td[2]",
-            "value": "5000"
+            "value": "30000"
         },
         {
             "command": "verifyText",
@@ -583,7 +1852,7 @@
             "value": "*Test*"
         }
     ],
-    "BLOGCATE_SEARCH_02": [
+    "BLOGCATESEARCH2": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -615,11 +1884,6 @@
             "value": "${KEY_ENTER}"
         },
         {
-            "command": "pause",
-            "target": "10000",
-            "value": ""
-        },
-        {
             "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
             "value": "3000"
@@ -635,20 +1899,10 @@
             "value": ""
         }
     ],
-    "BLOGCATE_SEARCH_03": [
+    "BLOGCATESEARCH3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li[2]/a/span",
+            "target": "https://cms.anhtester.com/admin/blog-category",
             "value": ""
         },
         {
@@ -659,35 +1913,25 @@
         {
             "command": "type",
             "target": "id=search",
-            "value": "bfdgnbdsjkfbsdjfgsjdfyawhtrwsadewtreyheturyiuyhjhrt6uytierwqeqe3ghtedrfeytsertetreythfdsrfwerweqqwedasdsfaewr"
-        },
-        {
-            "command": "sendKeys",
-            "target": "id=search",
-            "value": "${KEY_ENTER}"
+            "value": "Loremipsumdolorsitamet,consecteturadipiscingelit.SeddoyouspeakVietnamese?Nuncviverraetmetusasegestas.Phasellusatfelisneque.Nullafacilisi.Donecnonliberoatpurusconsequatconsectetur.VestibulumanteipsumprimisinfaucibusorciluctusetultricesposuerecubiliaCurae;Quisquecursus,nislidtempusconvallis,nisiereat.1234567890"
         },
         {
             "command": "pause",
-            "target": "10000",
-            "value": ""
+            "target": "",
+            "value": "1000"
         },
         {
-            "command": "waitForElementPresent",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
-            "value": "3000"
+            "command": "storeValue                  ",
+            "target": "id=search",
+            "value": "inputValue"
         },
         {
-            "command": "verifyText",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']/td",
-            "value": "Nothing found"
-        },
-        {
-            "command": "verifyElementNotPresent",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1][not(@class='footable-empty')]",
-            "value": ""
+            "command": "verifyEval",
+            "target": "storedVars['inputValue'].length <= 255",
+            "value": "true"
         }
     ],
-    "BLOGCATE_SEARCH_04": [
+    "BLOGCATESEARCH4": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -719,11 +1963,6 @@
             "value": "${KEY_ENTER}"
         },
         {
-            "command": "pause",
-            "target": "10000",
-            "value": ""
-        },
-        {
             "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
             "value": "3000"
@@ -739,92 +1978,37 @@
             "value": ""
         }
     ],
-    "BLOGCATE_VIEW_1": [
+    "BLOGCATEVIEW1": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/login",
+            "target": "https://cms.anhtester.com/admin/blog-category",
             "value": ""
         },
         {
-            "command": "click",
-            "target": "id=email",
-            "value": ""
-        },
-        {
-            "command": "type",
-            "target": "id=email",
-            "value": "admin@example.com"
-        },
-        {
-            "command": "click",
-            "target": "id=password",
-            "value": ""
-        },
-        {
-            "command": "type",
-            "target": "id=password",
-            "value": "123456"
-        },
-        {
-            "command": "click",
-            "target": "xpath=//button[@type='submit']",
-            "value": ""
-        },
-        {
-            "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li[2]/a/span",
-            "value": ""
-        },
-        {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//th[normalize-space(text())='#']",
             "value": "3000"
         },
         {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//th[normalize-space(text())='Name']",
             "value": "3000"
         },
         {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//th[normalize-space(text())='Options']",
             "value": "3000"
         },
         {
-            "command": "pause",
-            "target": "30000",
-            "value": ""
-        },
-        {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]/tbody/tr",
-            "value": "3000"
+            "value": "30000"
         }
     ],
-    "BLOGCATE_VIEW_2": [
+    "BLOGCATEVIEW2": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li[2]/a/span",
+            "target": "https://cms.anhtester.com/admin/blog-category",
             "value": ""
         },
         {
@@ -838,30 +2022,15 @@
             "value": ""
         },
         {
-            "command": "pause",
-            "target": "3000",
-            "value": ""
-        },
-        {
             "command": "verifyLocation",
             "target": "https://cms.anhtester.com/admin/blog-category/create",
             "value": ""
         }
     ],
-    "BLOGCATE_VIEW_3": [
+    "BLOGCATEVIEW3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li[2]/a/span",
+            "target": "https://cms.anhtester.com/admin/blog-category",
             "value": ""
         },
         {
@@ -880,7 +2049,7 @@
             "value": ""
         }
     ],
-    "BLOG_DELETE_1": [
+    "BLOGDELETE1": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -922,7 +2091,7 @@
             "value": ""
         }
     ],
-    "BLOG_DELETE_2": [
+    "BLOGDELETE2": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -964,7 +2133,7 @@
             "value": ""
         }
     ],
-    "BLOG_EDIT_1": [
+    "BLOGEDIT1": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -987,13 +2156,117 @@
         },
         {
             "command": "click",
-            "target": "xpath=//form[@id='add_form']/div[6]/div/div/div[3]/div[2]",
+            "target": "id=title",
             "value": ""
         },
         {
-            "command": "editContent",
-            "target": "xpath=//form[@id='add_form']/div[6]/div/div/div[3]/div[2]",
-            "value": "ví dụ description"
+            "command": "type",
+            "target": "id=title",
+            "value": "update"
+        },
+        {
+            "command": "storeValue",
+            "target": "id=title",
+            "value": "currentTitle"
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::div[3]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "verifyValue",
+            "target": "id=title",
+            "value": "${currentTitle}"
+        }
+    ],
+    "BLOGEDIT10": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[4]/div/div[2]/div/div[3]/button/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'file-preview-item')]@title",
+            "value": ""
+        }
+    ],
+    "BLOGEDIT11": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "css=div.note-editable",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').innerHTML = 'Cập nhật description';",
+            "value": ""
+        },
+        {
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').dispatchEvent(new Event('input', { bubbles: true }));",
+            "value": ""
         },
         {
             "command": "click",
@@ -1012,54 +2285,34 @@
         },
         {
             "command": "verifyText",
-            "target": "xpath=//form[@id='add_form']/div[6]/div/div/div[3]/div[2]",
-            "value": "ví dụ description"
+            "target": "css=div.note-editable",
+            "value": "Cập nhật description"
         }
     ],
-    "BLOG_EDIT_2": [
+    "BLOGEDIT12": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
+            "target": "xpath=//td[6]/a/i",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "css=div.note-editable",
             "value": ""
         },
         {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').innerHTML = '';",
             "value": ""
         },
         {
-            "command": "click",
-            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "link=Select File",
-            "value": ""
-        },
-        {
-            "command": "waitForElementPresent",
-            "target": "xpath=//div[@id='aizUploaderModal']",
-            "value": "3000"
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@title='DSC07073.jpg']",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@id='aizUploaderModal']/div/div/div[3]/button",
+            "command": "runScript",
+            "target": "document.querySelector('.note-editable').dispatchEvent(new Event('input', { bubbles: true }));",
             "value": ""
         },
         {
@@ -1074,170 +2327,16 @@
         },
         {
             "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
+            "target": "xpath=//td[6]/a/i",
             "value": ""
         },
         {
-            "command": "verifyAttribute",
-            "target": "xpath=//div[contains(@class, 'file-preview-item')]@title",
-            "value": "DSC07073.jpg"
-        }
-    ],
-    "BLOG_EDIT_3": [
-        {
-            "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "link=Upload New",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@id='aiz-upload-files']/div/div[2]/div/div[2]/div/div/button",
-            "value": ""
-        },
-        {
-            "command": "pause",
-            "target": "30000",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "link=Select File",
-            "value": ""
-        },
-        {
-            "command": "waitForElementNotPresent",
-            "target": "xpath=//div[@title='Game.rar']",
-            "value": "10000"
-        },
-        {
-            "command": "click",
-            "target": "xpath=//button[@type='submit']",
-            "value": ""
-        },
-        {
-            "command": "verifyElementPresent",
-            "target": "xpath=//div[contains(@class, 'alert-danger')]",
-            "value": ""
-        },
-        {
-            "command": "verifyElementNotPresent",
-            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "command": "verifyText",
+            "target": "css=div.note-editable",
             "value": ""
         }
     ],
-    "BLOG_EDIT_4": [
-        {
-            "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "link=Upload New",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@id='aiz-upload-files']/div/div[2]/div/div[2]/div/div/button",
-            "value": ""
-        },
-        {
-            "command": "pause",
-            "target": "30000",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "link=Select File",
-            "value": ""
-        },
-        {
-            "command": "waitForElementPresent",
-            "target": "xpath=//div[@title='DSC06624.jpg']",
-            "value": "10000"
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@title='DSC06624.jpg']",
-            "value": ""
-        },
-        {
-            "command": "pause",
-            "target": "5000",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//div[@id='aizUploaderModal']//button[contains(text(), 'Add Files')]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//button[@type='submit']",
-            "value": ""
-        },
-        {
-            "command": "verifyElementPresent",
-            "target": "xpath=//div[contains(@class, 'alert-success')]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
-            "value": ""
-        },
-        {
-            "command": "verifyAttribute",
-            "target": "xpath=//div[contains(@class, 'file-preview-item')]@title",
-            "value": "DSC06624.jpg"
-        }
-    ],
-    "BLOG_EDIT_5": [
+    "BLOGEDIT2": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -1284,11 +2383,6 @@
             "value": ""
         },
         {
-            "command": "pause",
-            "target": "10000",
-            "value": ""
-        },
-        {
             "command": "verifyElementNotPresent",
             "target": "xpath=//div[contains(@class, 'alert-success')]",
             "value": ""
@@ -1309,20 +2403,314 @@
             "value": "${currentTitle}"
         }
     ],
-    "BLOG_SEARCH_1": [
+    "BLOGEDIT3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
+            "target": "xpath=//td[6]/a/i",
             "value": ""
         },
         {
             "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "xpath=//button[@type='button']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=bs-select-1-3",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=văn phòng phẩm"
+        },
+        {
+            "command": "storeValue",
+            "target": "id=category_id",
+            "value": "currentCategory"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Test Happy Path'])[1]/following::a[1]",
+            "value": ""
+        },
+        {
+            "command": "verifyValue",
+            "target": "id=category_id",
+            "value": "${currentCategory}"
+        }
+    ],
+    "BLOGEDIT4": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='button']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=bs-select-1-3",
+            "value": ""
+        },
+        {
+            "command": "select",
+            "target": "id=category_id",
+            "value": "label=--"
+        },
+        {
+            "command": "storeValue",
+            "target": "id=category_id",
+            "value": "currentCategory"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGEDIT5": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": "update"
+        },
+        {
+            "command": "storeValue",
+            "target": "id=slug",
+            "value": "currentSlug"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Test Happy Path'])[1]/following::a[1]",
+            "value": ""
+        },
+        {
+            "command": "verifyValue",
+            "target": "id=slug",
+            "value": "${currentSlug}"
+        }
+    ],
+    "BLOGEDIT6": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "id=slug",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGEDIT7": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": "update"
+        },
+        {
+            "command": "storeValue",
+            "target": "name=short_description",
+            "value": "currentShortDescription"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "verifyValue",
+            "target": "name=short_description",
+            "value": "${currentShortDescription}"
+        }
+    ],
+    "BLOGEDIT8": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "type",
+            "target": "name=short_description",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementNotPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        }
+    ],
+    "BLOGEDIT9": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//td[6]/a/i",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//form[@id='add_form']/div[4]/div/div/div/div",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "link=Select File",
+            "value": ""
+        },
+        {
+            "command": "waitForElementPresent",
+            "target": "xpath=//div[@id='aizUploaderModal']",
+            "value": "3000"
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@title='DSC07073.jpg']",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//div[@id='aizUploaderModal']/div/div/div[3]/button",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=//button[@type='submit']",
+            "value": ""
+        },
+        {
+            "command": "verifyElementPresent",
+            "target": "xpath=//div[contains(@class, 'alert-success')]",
+            "value": ""
+        },
+        {
+            "command": "click",
+            "target": "xpath=(.//*[normalize-space(text()) and normalize-space(.)='ví dụ'])[1]/following::a[1]",
+            "value": ""
+        }
+    ],
+    "BLOGSEARCH1": [
+        {
+            "command": "open",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1333,7 +2721,7 @@
         {
             "command": "type",
             "target": "id=search",
-            "value": "test"
+            "value": "Test"
         },
         {
             "command": "submit",
@@ -1342,39 +2730,24 @@
         },
         {
             "command": "waitForTextPresent",
-            "target": "test",
+            "target": "Test",
             "value": "30000"
         },
         {
-            "command": "pause",
-            "target": "",
-            "value": "30000"
-        },
-        {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]",
-            "value": ""
+            "value": "30000"
         },
         {
             "command": "verifyText",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]/td[2]",
-            "value": "*test*"
+            "value": "*Test*"
         }
     ],
-    "BLOG_SEARCH_2": [
+    "BLOGSEARCH2": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1393,14 +2766,9 @@
             "value": ""
         },
         {
-            "command": "pause",
-            "target": "",
-            "value": "30000"
-        },
-        {
             "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
-            "value": "3000"
+            "value": "30000"
         },
         {
             "command": "verifyText",
@@ -1413,20 +2781,10 @@
             "value": ""
         }
     ],
-    "BLOG_SEARCH_3": [
+    "BLOGSEARCH3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1437,48 +2795,28 @@
         {
             "command": "type",
             "target": "id=search",
-            "value": "abcxyz45421201534.202451024534548241530"
-        },
-        {
-            "command": "submit",
-            "target": "id=sort_blogs",
-            "value": ""
+            "value": "Loremipsumdolorsitamet,consecteturadipiscingelit.SeddoyouspeakVietnamese?Nuncviverraetmetusasegestas.Phasellusatfelisneque.Nullafacilisi.Donecnonliberoatpurusconsequatconsectetur.VestibulumanteipsumprimisinfaucibusorciluctusetultricesposuerecubiliaCurae;Quisquecursus,nislidtempusconvallis,nisiereat.1234567890"
         },
         {
             "command": "pause",
             "target": "",
-            "value": "30000"
+            "value": "1000"
         },
         {
-            "command": "waitForElementPresent",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
-            "value": "3000"
+            "command": "storeValue                  ",
+            "target": "id=search",
+            "value": "inputValue"
         },
         {
-            "command": "verifyText",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']/td",
-            "value": "Nothing found"
-        },
-        {
-            "command": "verifyElementNotPresent",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1][not(@class='footable-empty')]",
-            "value": ""
+            "command": "verifyEval",
+            "target": "storedVars['inputValue'].length <= 255",
+            "value": "true"
         }
     ],
-    "BLOG_SEARCH_4": [
+    "BLOGSEARCH4": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1497,14 +2835,9 @@
             "value": ""
         },
         {
-            "command": "pause",
-            "target": "",
-            "value": "30000"
-        },
-        {
             "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//tr[@class='footable-empty']",
-            "value": "3000"
+            "value": "30000"
         },
         {
             "command": "verifyText",
@@ -1517,7 +2850,7 @@
             "value": ""
         }
     ],
-    "BLOG_VIEW_1": [
+    "BLOGVIEW1": [
         {
             "command": "open",
             "target": "https://cms.anhtester.com/admin",
@@ -1539,40 +2872,25 @@
             "value": "3000"
         },
         {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//th[normalize-space(text())='Title']",
             "value": "3000"
         },
         {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=//table[contains(@class, 'aiz-table')]//th[normalize-space(text())='Options']",
             "value": "3000"
         },
         {
-            "command": "pause",
-            "target": "",
+            "command": "waitForElementPresent",
+            "target": "xpath=//table[contains(@class, 'aiz-table')]//tbody//tr[1]",
             "value": "30000"
-        },
-        {
-            "command": "verifyElementPresent",
-            "target": "xpath=//table[contains(@class, 'aiz-table')]/tbody/tr",
-            "value": "3000"
         }
     ],
-    "BLOG_VIEW_2": [
+    "BLOGVIEW2": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1586,30 +2904,15 @@
             "value": ""
         },
         {
-            "command": "pause",
-            "target": "",
-            "value": "3000"
-        },
-        {
             "command": "verifyLocation",
             "target": "https://cms.anhtester.com/admin/blog/create",
             "value": ""
         }
     ],
-    "BLOG_VIEW_3": [
+    "BLOGVIEW3": [
         {
             "command": "open",
-            "target": "https://cms.anhtester.com/admin",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/a/span[2]",
-            "value": ""
-        },
-        {
-            "command": "click",
-            "target": "xpath=//ul[@id='main-menu']/li[9]/ul/li/a/span",
+            "target": "https://cms.anhtester.com/admin/blog",
             "value": ""
         },
         {
@@ -1618,7 +2921,7 @@
             "value": "30000"
         },
         {
-            "command": "verifyElementPresent",
+            "command": "waitForElementPresent",
             "target": "xpath=(//table[contains(@class, 'aiz-table')]//tbody//tr[1]//a[@title='Edit']/i[@class='las la-pen'])[1]",
             "value": ""
         },
